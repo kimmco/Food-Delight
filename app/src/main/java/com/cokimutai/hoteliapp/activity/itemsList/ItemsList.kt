@@ -1,6 +1,7 @@
 package com.cokimutai.hoteliapp.activity.itemsList
 
 
+import android.content.Intent
 import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -30,8 +31,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.content.ContextCompat.startActivity
 import coil.compose.AsyncImage
 import com.cokimutai.hoteliapp.R
+import com.cokimutai.hoteliapp.activity.foodDetails.FoodDetailsActivity
 import com.cokimutai.hoteliapp.domain.FoodModel
 
 @Composable
@@ -56,11 +59,11 @@ fun Items(item: FoodModel, index: Int) {
         .background(colorResource(R.color.grey), RoundedCornerShape(10.dp))
         .wrapContentHeight()
         .clickable {
-          /*  val intent= Intent(context,DetailEachFoodActivity::class.java).apply {
+            val intent= Intent(context, FoodDetailsActivity::class.java).apply {
                 putExtra("object",item)
-            }
-            startActivity(context,intent,null)
-            */
+             }
+             startActivity(context,intent,null)
+
         }
     )
     {

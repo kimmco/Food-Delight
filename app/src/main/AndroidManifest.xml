@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,25 +14,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HoteliApp">
         <activity
+            android:name=".activity.cart.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.foodDetails.FoodDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.BaseActivity"
             android:exported="false" />
         <activity
             android:name=".activity.splash.SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.HoteliApp"
-            >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/Theme.HoteliApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activity.dashboard.MainActivity"
-            android:exported="false"
-            >
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".activity.itemsList.ItemsListActivity"
             android:exported="false" />

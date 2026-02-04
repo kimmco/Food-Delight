@@ -21,6 +21,7 @@ import androidx.compose.material3.NavigationBarItemDefaults // For customizing c
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.painterResource
+import com.cokimutai.hoteliapp.activity.cart.CartActivity
 
 
 @Composable
@@ -39,7 +40,7 @@ fun HotBottomBar() {
                     {
                         selectedItem = bottomMenuItem.Lable
                         if (bottomMenuItem.Lable == "Cart") {
-                            //context.startActivity(Intent(context, CartActivity::class.java))
+                            context.startActivity(Intent(context, CartActivity::class.java))
                         } else {
                             Toast.makeText(context,bottomMenuItem.Lable,Toast.LENGTH_SHORT).show()
                         }
