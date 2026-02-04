@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "524462323965",
+    "project_id": "hoteli-app11",
+    "storage_bucket": "hoteli-app11.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524462323965:android:ee0742e81b66502987a694",
+        "android_client_info": {
+          "package_name": "com.cokimutai.hoteliapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM2fSlWZob1zwhEOESY3QJ2Ru9ONLzUKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
