@@ -3,8 +3,13 @@ package com.cokimutai.hoteliapp.activity.dashboard
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBars
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -26,7 +31,8 @@ import com.cokimutai.hoteliapp.R
 fun TopBar() {
     ConstraintLayout(
         modifier = Modifier
-           // .padding(top = 8.dp)
+            .padding(WindowInsets.statusBars.asPaddingValues())
+            .padding(top = 8.dp)
             .padding(horizontal = 16.dp)
             .fillMaxWidth()
     ){

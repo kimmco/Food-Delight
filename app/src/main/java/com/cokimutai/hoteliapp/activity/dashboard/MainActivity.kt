@@ -43,9 +43,10 @@ class MainActivity : BaseActivity() {
         val banners by viewModel.banners.observeAsState(emptyList())
         val categories by viewModel.categories.observeAsState(emptyList())
         val showBannerLoading = banners.isEmpty()
-        val showCategoryLoading = banners.isEmpty()
+        val showCategoryLoading = categories.isEmpty()
 
     Scaffold(
+        topBar = { TopBar() },
         bottomBar = { HotBottomBar()}
          ) { paddingValues ->
          LazyColumn(
@@ -53,7 +54,7 @@ class MainActivity : BaseActivity() {
                 .fillMaxSize()
                 .padding(paddingValues = paddingValues)
             ){
-             item { TopBar()}
+            //item { TopBar()}
              item { Banner(banners, showBannerLoading) }
              item { Search() }
              item { CategorySection(categories, showCategoryLoading) }

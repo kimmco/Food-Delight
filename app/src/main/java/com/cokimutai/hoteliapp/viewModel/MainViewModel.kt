@@ -9,14 +9,6 @@ import com.cokimutai.hoteliapp.domain.CategoryModel
 import com.cokimutai.hoteliapp.domain.FoodModel
 import com.cokimutai.hoteliapp.repository.MainRepository
 
-/*
-class MainViewModel : ViewModel() {
-    private val repository = MainRepository()
-
-    fun loadBanner() : LiveData<MutableList<BannerModel>> {
-        return repository.loadBanner()
-    }
-} */
 
 class MainViewModel : ViewModel() {
     private val repository = MainRepository()
